@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 27 13:01:41 2013
+Quartus II 64-Bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Full Version
+Revision Name : Oscilliscope
+Top-level Entity Name : Oscilliscope
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 3,232 / 33,216 ( 10 % )
+    Total combinational functions : 2,672 / 33,216 ( 8 % )
+    Dedicated logic registers : 1,524 / 33,216 ( 5 % )
+Total registers : 1524
+Total pins : 131 / 475 ( 28 % )
+Total virtual pins : 0
+Total memory bits : 172,288 / 483,840 ( 36 % )
+Embedded Multiplier 9-bit elements : 5 / 70 ( 7 % )
+Total PLLs : 1 / 4 ( 25 % )

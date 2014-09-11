@@ -1,0 +1,35 @@
+
+State Machine - |Oscilliscope|VGA_Display:disp|DO_Controller:FSM|curState
+Name curState.pauseGraph curState.displayGraph curState.clearDisplay curState.idle 
+curState.idle 0 0 0 0 
+curState.clearDisplay 0 0 1 1 
+curState.displayGraph 0 1 0 1 
+curState.pauseGraph 1 0 0 1 
+
+State Machine - |Oscilliscope|Audio_Controller:Audio_Controller|Audio_and_Video_Config:Audio_Config|s_alavon_slave
+Name s_alavon_slave.I2C_STATE_3_COMPLETE s_alavon_slave.I2C_STATE_2_TRANSFERING s_alavon_slave.I2C_STATE_1_START s_alavon_slave.I2C_STATE_0_IDLE 
+s_alavon_slave.I2C_STATE_0_IDLE 0 0 0 0 
+s_alavon_slave.I2C_STATE_1_START 0 0 1 1 
+s_alavon_slave.I2C_STATE_2_TRANSFERING 0 1 0 1 
+s_alavon_slave.I2C_STATE_3_COMPLETE 1 0 0 1 
+
+State Machine - |Oscilliscope|Audio_Controller:Audio_Controller|Audio_and_Video_Config:Audio_Config|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver
+Name s_i2c_transceiver.I2C_STATE_6_COMPLETE s_i2c_transceiver.I2C_STATE_5_STOP_BIT s_i2c_transceiver.I2C_STATE_4_TRANSFER_ACK s_i2c_transceiver.I2C_STATE_3_TRANSFER_BYTE s_i2c_transceiver.I2C_STATE_2_START_BIT s_i2c_transceiver.I2C_STATE_1_PRE_START s_i2c_transceiver.I2C_STATE_0_IDLE 
+s_i2c_transceiver.I2C_STATE_0_IDLE 0 0 0 0 0 0 0 
+s_i2c_transceiver.I2C_STATE_1_PRE_START 0 0 0 0 0 1 1 
+s_i2c_transceiver.I2C_STATE_2_START_BIT 0 0 0 0 1 0 1 
+s_i2c_transceiver.I2C_STATE_3_TRANSFER_BYTE 0 0 0 1 0 0 1 
+s_i2c_transceiver.I2C_STATE_4_TRANSFER_ACK 0 0 1 0 0 0 1 
+s_i2c_transceiver.I2C_STATE_5_STOP_BIT 0 1 0 0 0 0 1 
+s_i2c_transceiver.I2C_STATE_6_COMPLETE 1 0 0 0 0 0 1 
+
+State Machine - |Oscilliscope|Audio_Controller:Audio_Controller|Audio_and_Video_Config:Audio_Config|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init
+Name s_i2c_auto_init.AUTO_STATE_7_DONE s_i2c_auto_init.AUTO_STATE_6_INCREASE_COUNTER s_i2c_auto_init.AUTO_STATE_5_SEND_STOP_BIT s_i2c_auto_init.AUTO_STATE_4_WAIT s_i2c_auto_init.AUTO_STATE_3_TRANSFER_BYTE_2 s_i2c_auto_init.AUTO_STATE_2_TRANSFER_BYTE_1 s_i2c_auto_init.AUTO_STATE_1_SEND_START_BIT s_i2c_auto_init.AUTO_STATE_0_CHECK_STATUS 
+s_i2c_auto_init.AUTO_STATE_0_CHECK_STATUS 0 0 0 0 0 0 0 0 
+s_i2c_auto_init.AUTO_STATE_1_SEND_START_BIT 0 0 0 0 0 0 1 1 
+s_i2c_auto_init.AUTO_STATE_2_TRANSFER_BYTE_1 0 0 0 0 0 1 0 1 
+s_i2c_auto_init.AUTO_STATE_3_TRANSFER_BYTE_2 0 0 0 0 1 0 0 1 
+s_i2c_auto_init.AUTO_STATE_4_WAIT 0 0 0 1 0 0 0 1 
+s_i2c_auto_init.AUTO_STATE_5_SEND_STOP_BIT 0 0 1 0 0 0 0 1 
+s_i2c_auto_init.AUTO_STATE_6_INCREASE_COUNTER 0 1 0 0 0 0 0 1 
+s_i2c_auto_init.AUTO_STATE_7_DONE 1 0 0 0 0 0 0 1 

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 27 13:01:01 2013
+Quartus II 64-Bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Full Version
+Revision Name : Oscilliscope
+Top-level Entity Name : Oscilliscope
+Family : Cyclone II
+Total logic elements : 3,812
+    Total combinational functions : 2,672
+    Dedicated logic registers : 1,524
+Total registers : 1524
+Total pins : 131
+Total virtual pins : 0
+Total memory bits : 172,288
+Embedded Multiplier 9-bit elements : 5
+Total PLLs : 1

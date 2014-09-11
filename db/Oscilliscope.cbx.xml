@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Oscilliscope">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|Audio:sound|Shift_Registers:SR|Integer_Scaling:u1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_oto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|Audio:sound|Shift_Registers:SR|Integer_Scaling:u1|lpm_mult:Mult0" CBX_FILE_NAME="mult_50t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|Audio_Controller:Audio_Controller|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO" CBX_FILE_NAME="scfifo_5041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|VGA_Display:disp|DO_Controller:FSM|imageGet:clear|backgroundImage:backgroundImage_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_s281.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Oscilliscope|vga_adapter:VGA|altsyncram:VideoMemory" CBX_FILE_NAME="altsyncram_d3g1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

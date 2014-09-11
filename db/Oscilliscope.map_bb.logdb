@@ -1,0 +1,4 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Audio:sound|Shift_Registers:SR|Integer_Scaling:u1|lpm_mult:Mult0|mult_50t:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Audio:sound|Shift_Registers:SR|Integer_Scaling:u1|lpm_mult:Mult0|mult_50t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Audio:sound|Shift_Registers:SR|Integer_Scaling:u1|lpm_mult:Mult0|mult_50t:auto_generated|mac_out2,

@@ -1,0 +1,41 @@
+--lpm_abs CARRY_CHAIN="MANUAL" DEVICE_FAMILY="Cyclone II" IGNORE_CARRY_BUFFERS="OFF" LPM_WIDTH=42 data result
+--VERSION_BEGIN 11.1SP2 cbx_cycloneii 2012:01:25:21:14:56:SJ cbx_lpm_abs 2012:01:25:21:14:56:SJ cbx_lpm_add_sub 2012:01:25:21:14:56:SJ cbx_mgl 2012:01:25:21:17:49:SJ cbx_stratix 2012:01:25:21:14:56:SJ cbx_stratixii 2012:01:25:21:14:56:SJ cbx_util_mgl 2012:01:25:21:14:56:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2011 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION carry_sum (cin, sin)
+RETURNS ( cout, sout);
+
+--synthesis_resources = lut 42 
+SUBDESIGN lpm_abs_1s9
+( 
+	data[41..0]	:	input;
+	overflow	:	output;
+	result[41..0]	:	output;
+) 
+VARIABLE 
+	cs2a[41..0] : carry_sum;
+	result_tmp[41..0]	: WIRE;
+
+BEGIN 
+	cs2a[].cin = ( ((data[41..41] $ data[41..1]) & cs2a[40..0].cout), ((! data[0..0]) & data[41..41]));
+	cs2a[].sin = ( ((data[41..41] $ data[41..1]) $ cs2a[40..0].cout), data[0..0]);
+	overflow = (result_tmp[41..41] & data[41..41]);
+	result[] = result_tmp[];
+	result_tmp[] = ( cs2a[41..1].sout, data[0..0]);
+END;
+--VALID FILE

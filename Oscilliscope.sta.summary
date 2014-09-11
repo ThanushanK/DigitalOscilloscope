@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Audio_Controller:Audio_Controller|audio_in_available'
+Slack : -78.901
+TNS   : -3860.417
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -62.415
+TNS   : -435.496
+
+Type  : Slow Model Setup 'pll|altpll_component|pll|clk[1]'
+Slack : 32.118
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -1.502
+TNS   : -80.341
+
+Type  : Slow Model Hold 'Audio_Controller:Audio_Controller|audio_in_available'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow Model Hold 'pll|altpll_component|pll|clk[1]'
+Slack : 0.545
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Audio_Controller:Audio_Controller|audio_in_available'
+Slack : -0.500
+TNS   : -1136.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 7.620
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'pll|altpll_component|pll|clk[1]'
+Slack : 17.873
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Audio_Controller:Audio_Controller|audio_in_available'
+Slack : -35.868
+TNS   : -1268.908
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -17.979
+TNS   : -125.326
+
+Type  : Fast Model Setup 'pll|altpll_component|pll|clk[1]'
+Slack : 36.274
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.148
+TNS   : -83.285
+
+Type  : Fast Model Hold 'Audio_Controller:Audio_Controller|audio_in_available'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast Model Hold 'pll|altpll_component|pll|clk[1]'
+Slack : 0.253
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Audio_Controller:Audio_Controller|audio_in_available'
+Slack : -0.500
+TNS   : -1136.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 7.620
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'pll|altpll_component|pll|clk[1]'
+Slack : 17.873
+TNS   : 0.000
+
+------------------------------------------------------------
